@@ -1,0 +1,2 @@
+class SampleTagsController < ApplicationController
+end
