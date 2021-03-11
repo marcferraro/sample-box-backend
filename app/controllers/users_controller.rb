@@ -6,4 +6,8 @@ class UsersController < ApplicationController
         render json: users
     end
 
+    def login
+        byebug
+    end
+
 end
