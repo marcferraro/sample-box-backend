@@ -7,7 +7,13 @@ class UsersController < ApplicationController
     end
 
     def login
-        byebug
+        user = User.find_by(username: params["username"])
+
+        if (user)
+            render json: user
+        else
+            render json: {error: "User not found."}
+        end
     end
 
 end
