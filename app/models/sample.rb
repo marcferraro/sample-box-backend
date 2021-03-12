@@ -3,5 +3,5 @@ class Sample < ApplicationRecord
     has_many :sample_tags
     has_many :tags, through: :sample_tags
 
-    include AudioUploader::Attachment(:audio)
+    has_one_attached :sample
 end

@@ -17,11 +17,13 @@ gem 'puma', '~> 5.0'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
-gem 'image_processing'
+# gem 'image_processing'
 
-gem "shrine"
+# gem "shrine"
 
 gem "active_model_serializers"
+gem "mini_magick"
+gem 'activestorage-audio'
 
 
 # Reduces boot times through caching; required in config/boot.rb
