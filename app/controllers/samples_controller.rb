@@ -27,6 +27,15 @@ class SamplesController < ApplicationController
         end
     end
 
+    def destroy
+        sample = Sample.find_by(id: params[:id])
+        if sample.destroy
+            render json: {message: "Sample deleted."}
+        else
+            render json: {error: "Sample unable to be deleted or not found."}
+        end
+    end
+
     private
 
     def sample_params
