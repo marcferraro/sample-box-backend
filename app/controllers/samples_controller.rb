@@ -7,8 +7,8 @@ class SamplesController < ApplicationController
     end
 
     def create
+        sample = Sample.new(title: params[:title], user_id: params[:user_id], date: params[:date], note: params[:note], shared: params[:shared])
         byebug
-        sample = Sample.new(title: params[:title], date: params[:date], note: params[:note], shared: params[:shared])
         sample.sample_data_uri = params[:sample]
         if sample.save
             render json: sample
