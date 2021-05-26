@@ -22,6 +22,7 @@ gem 'puma', '~> 5.0'
 # gem "shrine"
 
 gem "active_model_serializers"
+gem 'carrierwave', '~> 2.0'
 # gem "mini_magick"
 # gem 'activestorage-audio'
 
