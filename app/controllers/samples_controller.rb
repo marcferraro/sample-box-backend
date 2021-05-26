@@ -7,8 +7,9 @@ class SamplesController < ApplicationController
     end
 
     def create
-        # byebug
-        sample = Sample.new(sample_params)
+        byebug
+        sample = Sample.new(title: params[:title], date: params[:date], note: params[:note], shared: params[:shared])
+        sample.sample_data_uri = params[:sample]
         if sample.save
             render json: sample
         else
@@ -38,9 +39,9 @@ class SamplesController < ApplicationController
 
     private
 
-    def sample_params
-        params.permit(:title, :date, :note, :shared, :user_id, :sample)
-    end
+    # def sample_params
+    #     params.permit(:title, :date, :note, :shared, :user_id, :sample)
+    # end
 
     def update_params
         # params.except(:id)

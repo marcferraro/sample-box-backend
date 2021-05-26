@@ -23,6 +23,7 @@ gem 'puma', '~> 5.0'
 
 gem "active_model_serializers"
 gem 'carrierwave', '~> 2.0'
+gem 'carrierwave-data-uri'
 # gem "mini_magick"
 # gem 'activestorage-audio'
 
