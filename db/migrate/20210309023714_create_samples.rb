@@ -6,6 +6,7 @@ class CreateSamples < ActiveRecord::Migration[6.1]
       t.string :note
       t.string :shared
       t.integer :user_id
+      t.string :sample
 
 
       t.timestamps

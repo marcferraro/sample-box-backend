@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_03_09_024906) do
     t.string "note"
     t.string "shared"
     t.integer "user_id"
+    t.string "sample"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
