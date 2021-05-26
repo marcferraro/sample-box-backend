@@ -3,5 +3,5 @@ class Sample < ApplicationRecord
     has_many :sample_tags
     has_many :tags, through: :sample_tags
 
-    mount_uploader :avatar, AvatarUploader
+    mount_uploader :sample, SampleUploader
 end
