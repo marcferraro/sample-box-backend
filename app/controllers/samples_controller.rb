@@ -39,7 +39,7 @@ class SamplesController < ApplicationController
     private
 
     def sample_params
-        params.permit(:title, :date, :note, :shared, :user_id)
+        params.permit(:title, :date, :note, :shared, :user_id, :sample)
     end
 
     def update_params

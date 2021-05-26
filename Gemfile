@@ -22,8 +22,8 @@ gem 'puma', '~> 5.0'
 # gem "shrine"
 
 gem "active_model_serializers"
-gem "mini_magick"
-gem 'activestorage-audio'
+# gem "mini_magick"
+# gem 'activestorage-audio'
 
 
 # Reduces boot times through caching; required in config/boot.rb
